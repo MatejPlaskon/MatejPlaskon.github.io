@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0e695d49.chunk.css",
+    "main.js": "/static/js/main.508ba0c0.chunk.js",
+    "main.js.map": "/static/js/main.508ba0c0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fbc2a6e3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fbc2a6e3.js.map",
+    "static/js/2.c4127384.chunk.js": "/static/js/2.c4127384.chunk.js",
+    "static/js/2.c4127384.chunk.js.map": "/static/js/2.c4127384.chunk.js.map",
+    "static/js/3.a9f33693.chunk.js": "/static/js/3.a9f33693.chunk.js",
+    "static/js/3.a9f33693.chunk.js.map": "/static/js/3.a9f33693.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.0e695d49.chunk.css.map": "/static/css/main.0e695d49.chunk.css.map",
+    "static/js/2.c4127384.chunk.js.LICENSE.txt": "/static/js/2.c4127384.chunk.js.LICENSE.txt",
+    "static/media/Bear_78x78.a8816f69.png": "/static/media/Bear_78x78.a8816f69.png",
+    "static/media/Boar_78x78.82486896.png": "/static/media/Boar_78x78.82486896.png",
+    "static/media/Goat_78x78.d89c6e1a.png": "/static/media/Goat_78x78.d89c6e1a.png",
+    "static/media/Raven_78x78.ff306cb5.png": "/static/media/Raven_78x78.ff306cb5.png",
+    "static/media/Stag_78x78.72ef6184.png": "/static/media/Stag_78x78.72ef6184.png",
+    "static/media/Wolf_round.b9b27e50.png": "/static/media/Wolf_round.b9b27e50.png",
+    "static/media/northgard_icon.8486b735.png": "/static/media/northgard_icon.8486b735.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fbc2a6e3.js",
+    "static/js/2.c4127384.chunk.js",
+    "static/css/main.0e695d49.chunk.css",
+    "static/js/main.508ba0c0.chunk.js"
+  ]
+}
