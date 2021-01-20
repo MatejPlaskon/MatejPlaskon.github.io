@@ -34,7 +34,7 @@ class Faq extends React.Component {
         <Input id="myInput" placeholder="Search" onKeyUp={this.handleClick} />
         <ul id="myUL">
           <li>
-            <a href="#">Adele</a>
+            <a href="#">New text</a>
           </li>
           <li>
             <a href="#">Agnes</a>
