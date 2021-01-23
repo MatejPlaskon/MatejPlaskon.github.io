@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ChakraProvider, theme } from '@chakra-ui/react';
 import MainMenu from './components/mainMenu';
+import MobileMenu from './components/mobileMenu';
 import MainHeader from './components/header';
 import { HashRouter, Route, Link } from 'react-router-dom';
 import TestMenu from './components/clansMenu';
@@ -13,6 +14,7 @@ function App() {
         <MainHeader />
         <div>
           <MainMenu />
+          <MobileMenu />
 
           <hr />
 

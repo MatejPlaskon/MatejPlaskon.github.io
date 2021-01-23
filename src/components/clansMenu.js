@@ -28,12 +28,12 @@ class TestMenu extends React.Component {
     super();
     this.state = {
       items: [
-        { id: 1, title: 'Wolf', image: Wolf },
-        { id: 2, title: 'Bear', image: Bear },
-        { id: 3, title: 'Boar', image: Boar },
-        { id: 4, title: 'Goat', image: Goat },
-        { id: 5, title: 'Raven', image: Raven },
-        { id: 6, title: 'Stag', image: Stag },
+        { id: 1, title: 'Wolf', image: Wolf, page: <WolfClan /> },
+        { id: 2, title: 'Bear', image: Bear, page: <BearClan /> },
+        { id: 3, title: 'Boar', image: Boar, page: <BoarClan /> },
+        { id: 4, title: 'Goat', image: Goat, page: <GoatClan /> },
+        { id: 5, title: 'Raven', image: Raven, page: <RavenClan /> },
+        { id: 6, title: 'Stag', image: Stag, page: <StagClan /> },
       ],
     };
   }
@@ -42,13 +42,12 @@ class TestMenu extends React.Component {
     return (
       <div>
         <Tabs orientation="horizontal" isFitted="true" w="100%">
-          <TabList>
+          <TabList id="clansList">
             {items.map(item => (
               <Tab key={item.id}>
                 <Flex>
                   <Box>
                     <Image src={item.image} boxSize="50px" align="left" />
-
                     <Text fontSize="xl" align="center">
                       {item.title}
                     </Text>
@@ -58,24 +57,9 @@ class TestMenu extends React.Component {
             ))}
           </TabList>
           <TabPanels>
-            <TabPanel>
-              <WolfClan />
-            </TabPanel>
-            <TabPanel>
-              <BearClan />
-            </TabPanel>
-            <TabPanel>
-              <BoarClan />
-            </TabPanel>
-            <TabPanel>
-              <GoatClan />
-            </TabPanel>
-            <TabPanel>
-              <RavenClan />
-            </TabPanel>
-            <TabPanel>
-              <StagClan />
-            </TabPanel>
+            {items.map(item => (
+              <TabPanel key={item.id}>{item.page}</TabPanel>
+            ))}
           </TabPanels>
         </Tabs>
       </div>

@@ -10,7 +10,7 @@ class OpenButton extends React.Component {
       // This syntax ensures `this` is bound within handleClick
       return (
         <button onClick={() => this.handleClick()}>
-          Click me
+          Text me
         </button>
       );
     }
