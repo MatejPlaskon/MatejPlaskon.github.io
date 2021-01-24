@@ -1,5 +1,7 @@
 import { Divider, ListItem, Box, UnorderedList, Text } from '@chakra-ui/react';
 import { Heading } from '@chakra-ui/react';
+import MainModal from '../modal';
+import FoodShort from '../resources/foodShort';
 
 const BearClan = () => {
   return (
@@ -13,13 +15,16 @@ const BearClan = () => {
       <Divider mb={3} mt={3} />
       <Heading mb={3}>Starting Bonuses</Heading>
       <UnorderedList>
-        <ListItem>Food and Wood penalties are reduced by 30%</ListItem>
+        <ListItem>
+          <MainModal linkText=" Food " title="Food" body={<FoodShort />} />
+          and Wood penalties are reduced by 30%
+        </ListItem>
         <ListItem>
           Instead of having reduced power, your military units get 10%
           resistance bonus during Winter
         </ListItem>
         <ListItem>
-          Can summon Kaija, the Armored Bear at the Training Camp for 40 Food
+          Can summon Kaija, the Armored Bear at the Training Camp for 40 <MainModal linkText=" Food " title="Food" body={<FoodShort />} />
           and 40 Fame (Cannot enter enemy territory)
         </ListItem>
       </UnorderedList>

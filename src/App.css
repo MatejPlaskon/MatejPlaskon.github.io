@@ -2,10 +2,11 @@ html {
   background-image: url("images/background.jpg");
   background-size: cover;
   background-attachment: fixed;
+  padding: 10px;
+
 }
 
 body {
-   padding: 10px;
    color: black;
    height: 100%;
 }

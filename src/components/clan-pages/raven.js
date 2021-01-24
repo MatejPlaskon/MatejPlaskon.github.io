@@ -1,5 +1,7 @@
 import { Divider, ListItem, Box, UnorderedList, Text } from '@chakra-ui/react';
 import { Heading } from '@chakra-ui/react';
+import MainModal from '../modal';
+import FoodShort from '../resources/foodShort';
 
 const RavenClan = () => {
   return (
@@ -14,7 +16,7 @@ const RavenClan = () => {
       <Divider mb={3} mt={3} />
       <Heading mb={3}>Starting Bonuses</Heading>
       <UnorderedList>
-        <ListItem>Can colonize with Kröwns rather than Food</ListItem>
+        <ListItem>Can colonize with Kröwns rather than <MainModal linkText=" Food " title="Food" body={<FoodShort />} /></ListItem>
         <ListItem>
           Can build a Harbor (replaces Longship Dock) to explore coastal areas
           and later send mercenaries to attack

@@ -1,5 +1,7 @@
 import { Divider, ListItem, Box, UnorderedList, Text } from '@chakra-ui/react';
 import { Heading } from '@chakra-ui/react';
+import MainModal from '../modal';
+import FoodShort from '../resources/foodShort';
 
 const StagClan = () => {
   return (
@@ -14,7 +16,7 @@ const StagClan = () => {
       <Divider mb={3} mt={3} />
       <Heading mb={3}>Starting Bonuses</Heading>
       <UnorderedList>
-        <ListItem>Start with +75 Food, Wood and Kröwns</ListItem>
+        <ListItem>Start with +75 <MainModal linkText=" Food " title="Food" body={<FoodShort />} />, Wood and Kröwns</ListItem>
         <ListItem>
           Hall of Skalds replaces Brewery and provides additional Fame
         </ListItem>
@@ -23,7 +25,7 @@ const StagClan = () => {
       <Heading mb={3}>Fame Bonuses</Heading>
       <UnorderedList>
         <ListItem>
-          200 Fame (Supplies): Gain +150 Food, Wood and Kröwns, and +10 Stone
+          200 Fame (Supplies): Gain +150 <MainModal linkText=" Food " title="Food" body={<FoodShort />} />, Wood and Kröwns, and +10 Stone
         </ListItem>
         <ListItem>
           500 Fame (Dedication): Upgraded buildings gain additional 10%

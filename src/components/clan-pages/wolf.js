@@ -6,6 +6,8 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { Heading } from '@chakra-ui/react';
+import MainModal from '../modal';
+import FoodShort from '../resources/foodShort';
 
 const WolfClan = () => {
   return (
@@ -21,11 +23,11 @@ const WolfClan = () => {
       <Heading mb={3}>Starting Bonuses</Heading>
       <UnorderedList>
         <ListItem>
-          Killing Wolves and Brown Bears provide Food (15 for wolves, 120 for
+          Killing Wolves and Brown Bears provide <MainModal linkText=" Food " title="Food" body={<FoodShort />} /> (15 for wolves, 120 for
           bears)
         </ListItem>
         <ListItem>
-          Military units eat 30% less Food and provide Happiness
+          Military units eat 30% less <MainModal linkText=" Food " title="Food" body={<FoodShort />} /> and provide Happiness
         </ListItem>
       </UnorderedList>
       <Divider mb={3} mt={3} />
