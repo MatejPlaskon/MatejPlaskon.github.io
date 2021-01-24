@@ -4,8 +4,9 @@ import MainMenu from './components/mainMenu';
 import MobileMenu from './components/mobileMenu';
 import MainHeader from './components/header';
 import { HashRouter, Route, Link } from 'react-router-dom';
-import TestMenu from './components/clansMenu';
+import TestMenu from './components/clan-pages/clansMenu';
 import Faq from './components/faq';
+import HomePage from './components/homepage/home';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
 
           <hr />
 
-          <Route exact path="/" />
+          <Route exact path="/" component={HomePage} />
           <Route exact path="/clans" component={TestMenu} />
           <Route exact path="/faq" component={Faq} />
         </div>

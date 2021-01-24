@@ -9,18 +9,18 @@ import {
   Box,
   Image,
 } from '@chakra-ui/react';
-import Wolf from './images/Wolf_round.png';
-import Bear from './images/Bear_78x78.png';
-import Boar from './images/Boar_78x78.png';
-import Goat from './images/Goat_78x78.png';
-import Raven from './images/Raven_78x78.png';
-import Stag from './images/Stag_78x78.png';
-import WolfClan from './clan-pages/wolf.js';
-import BearClan from './clan-pages/bear.js';
-import BoarClan from './clan-pages/boar.js';
-import GoatClan from './clan-pages/goat.js';
-import RavenClan from './clan-pages/raven.js';
-import StagClan from './clan-pages/stag.js';
+import Wolf from '../images/Wolf_round.png';
+import Bear from '../images/Bear_78x78.png';
+import Boar from '../images/Boar_78x78.png';
+import Goat from '../images/Goat_78x78.png';
+import Raven from '../images/Raven_78x78.png';
+import Stag from '../images/Stag_78x78.png';
+import WolfClan from './wolf.js';
+import BearClan from './bear.js';
+import BoarClan from './boar.js';
+import GoatClan from './goat.js';
+import RavenClan from './raven.js';
+import StagClan from './stag.js';
 import { Text } from '@chakra-ui/react';
 
 class TestMenu extends React.Component {
